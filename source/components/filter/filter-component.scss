@@ -1,0 +1,43 @@
+.todo-filter_input {
+  position: relative;
+  margin: 70px 25px 10px 25px;
+
+  input.todo-filter_input-field {
+    display: block;
+    border: none;
+    outline: none;
+    border-bottom: solid 1px #bdc3c7;
+    width: 100%;
+    padding: 10px 0 6px 30px;
+    box-sizing: border-box;
+    background: none;
+    font-size: 14px;
+    transition: all 0.4s;
+
+    &:focus { border-bottom: solid 1px #2c3e50; }
+    &:focus+i.todo-header_search-icon:before { color: #2c3e50; }
+  }
+
+  i.todo-filter_search-icon {
+    display: block;
+    position: absolute;
+    top:0;
+    color:#bdc3c7;
+    font-size: 22px;
+    width: 33px;
+    height: 38px;
+    line-height: 38px;
+    transition: all 0.4s;
+  }
+}
+
+@media (max-width: 768px){
+  // IPAD - 768 x 1024
+  .filter-input {
+    max-width: 200px;
+    margin-bottom: 10px;
+    input {
+      width: 200px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import '~antd/lib/modal/style/index.css';
+
+.todo-create_input {
+  @extend .todo-filter_input;
+  margin: 0px;
+
+  input.todo-create_input-field {
+    @extend .todo-filter_input-field;
+    
+    padding-left: 3px;
+  }
+}

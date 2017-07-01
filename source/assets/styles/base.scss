@@ -1,0 +1,14 @@
+i {
+	font-size: 28px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	text-transform: none;
+}
+
+@import '~antd/dist/antd.css';
+@import '~components/filter/filter-component.scss';
+@import '~components/todos/scss/index.scss';

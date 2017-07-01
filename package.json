@@ -1,0 +1,60 @@
+{
+  "name": "react-todo",
+  "version": "1.0.0",
+  "description": "This project is about TODO application",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.dev.js",
+    "test": "mocha --compilers js:babel-core/register --require ignore-styles ./test/setup.js ./source/**/*spec.js",
+    "test:watch": "npm run test -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-2"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.0.2",
+    "css-loader": "^0.28.4",
+    "eslint": "^4.1.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-react": "^7.1.0",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-plugin": "^2.28.0",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^11.0.0",
+    "mocha": "^3.4.2",
+    "node-sass": "^4.5.3",
+    "react-hot-loader": "^1.3.1",
+    "react-test-renderer": "^15.6.1",
+    "sass-loader": "^6.0.6",
+    "sinon": "^2.3.5",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.0.0",
+    "webpack-combine-loaders": "^2.0.3",
+    "webpack-dev-server": "^2.5.0"
+  },
+  "dependencies": {
+    "antd": "^2.11.1",
+    "enzyme": "^2.9.1",
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "redux": "^3.7.1",
+    "resolve-url-loader": "^2.1.0"
+  }
+}

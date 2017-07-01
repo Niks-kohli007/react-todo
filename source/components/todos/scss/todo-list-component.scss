@@ -1,0 +1,52 @@
+$todo-list--padding: 0;
+$todo-list--margin: 20px 0;
+$todo-list--box-shadow: 0 17px 20px -6px rgba(202, 202, 202, 0.5) !default;
+$todo-list_item--background-color: #bdc3c7 !default;
+$todo-list_item--background-color--hover: #7f8c8d !default;
+$todo-list_item--border-bottom: 1px solid #E9E9E9 !default;
+$todo-list_item--height: 60px !default;
+
+.todo-list-container {
+  max-width: 1286px;
+  margin: 30px auto 0 auto;
+  padding: 0 35px 10px 35px;
+
+  .todo-list_title {
+    font-size: 13px;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: 10px 0;
+    /*TODO: normalize font-family*/
+    font-family: osRegular, Arial;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+  }
+
+  .todo-list {
+    margin: 20px 0;
+    padding: 0;
+
+    .todo-list {
+      box-shadow: $todo-list--box-shadow;
+      margin: $todo-list--margin;
+      padding: $todo-list--padding;
+      list-style: none;
+
+      &_item {
+        background-color: $todo-list_item--background-color;
+        border-bottom: $todo-list_item--border-bottom;
+        height: $todo-list_item--height;
+        display: flex;
+        align-items: center;
+        position: relative;
+        transition: all 0.6s;
+
+        &:hover {
+          background-color: $todo-list_item--background-color--hover;
+        }
+      }
+    }
+  }
+}
